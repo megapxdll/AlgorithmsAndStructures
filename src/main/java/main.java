@@ -28,7 +28,7 @@ public class main {
                 System.out.println(arrayList);
         }
 
-        public void task_B(int n) { //O((n/2)*(n/2))
+        public void task_B(int n) { //O(n^2)
                 List<Integer> arrayList = new ArrayList<>();
                 for (int i = 0; i < n; i += 2) {
                         for (int j = i; j < n; j++) {
@@ -38,7 +38,7 @@ public class main {
                 System.out.println(arrayList);
         }
 
-        public void task_C(int n) { // O((n/2)*(n/2))
+        public void task_C(int n) { // O(n^2)
                 List<Integer> arrayList = new ArrayList<>();
                 for (int i = 0; i < n; i ++) {
                         for (int j = 0; j < n; j++) {
@@ -56,7 +56,7 @@ public class main {
                 return n.multiply(factorial(n.subtract(BigInteger.valueOf(1))));
         }
 
-        public static BigInteger fib(BigInteger n) {
+        public static BigInteger fib(BigInteger n) { //O(2^n)
                 if (n.equals(BigInteger.ONE)) {
                         return BigInteger.ONE;
                 }
